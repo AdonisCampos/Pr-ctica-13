@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CDS2\\Desktop\\Login\\loginC\\loginC.csproj": {}
+    "D:\\Escritorio\\Login\\Login\\loginC\\loginC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CDS2\\Desktop\\Login\\loginC\\loginC.csproj": {
+    "D:\\Escritorio\\Login\\Login\\loginC\\loginC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CDS2\\Desktop\\Login\\loginC\\loginC.csproj",
+        "projectUniqueName": "D:\\Escritorio\\Login\\Login\\loginC\\loginC.csproj",
         "projectName": "loginC",
-        "projectPath": "C:\\Users\\CDS2\\Desktop\\Login\\loginC\\loginC.csproj",
-        "packagesPath": "C:\\Users\\CDS2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CDS2\\Desktop\\Login\\loginC\\obj\\",
+        "projectPath": "D:\\Escritorio\\Login\\Login\\loginC\\loginC.csproj",
+        "packagesPath": "C:\\Users\\berna\\.nuget\\packages\\",
+        "outputPath": "D:\\Escritorio\\Login\\Login\\loginC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CDS2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\berna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

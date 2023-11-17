@@ -1,189 +1,196 @@
 ﻿namespace loginC
 {
-	partial class Form1
-	{
-		/// <summary>
-		///  Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		///  Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		///  Required method for Designer support - do not modify
-		///  the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.txtUsuario = new System.Windows.Forms.TextBox();
-			this.txtPass = new System.Windows.Forms.TextBox();
-			this.btnIniciar = new System.Windows.Forms.Button();
-			this.btnPass2 = new System.Windows.Forms.LinkLabel();
-			this.pictureBoxMinizar = new System.Windows.Forms.PictureBox();
-			this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
-			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinizar)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// panel1
-			// 
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-			this.panel1.Controls.Add(this.pictureBox1);
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panel1.Location = new System.Drawing.Point(0, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(150, 316);
-			this.panel1.TabIndex = 0;
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(21, 77);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(110, 142);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(240, 34);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(124, 28);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "MI LOGIN";
-			// 
-			// txtUsuario
-			// 
-			this.txtUsuario.BackColor = System.Drawing.Color.Black;
-			this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtUsuario.ForeColor = System.Drawing.Color.White;
-			this.txtUsuario.Location = new System.Drawing.Point(222, 89);
-			this.txtUsuario.Name = "txtUsuario";
-			this.txtUsuario.Size = new System.Drawing.Size(190, 16);
-			this.txtUsuario.TabIndex = 2;
-			this.txtUsuario.Text = "USUARIO";
-			this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
-			this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
-			// 
-			// txtPass
-			// 
-			this.txtPass.BackColor = System.Drawing.Color.Black;
-			this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtPass.ForeColor = System.Drawing.Color.White;
-			this.txtPass.Location = new System.Drawing.Point(222, 139);
-			this.txtPass.Name = "txtPass";
-			this.txtPass.Size = new System.Drawing.Size(190, 16);
-			this.txtPass.TabIndex = 3;
-			this.txtPass.Text = "CONTRASEÑA";
-			this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
-			this.txtPass.Leave += new System.EventHandler(this.txtPass_Leave);
-			// 
-			// btnIniciar
-			// 
-			this.btnIniciar.BackColor = System.Drawing.Color.Black;
-			this.btnIniciar.ForeColor = System.Drawing.Color.White;
-			this.btnIniciar.Location = new System.Drawing.Point(222, 196);
-			this.btnIniciar.Name = "btnIniciar";
-			this.btnIniciar.Size = new System.Drawing.Size(190, 23);
-			this.btnIniciar.TabIndex = 4;
-			this.btnIniciar.Text = "INICIAR SESION";
-			this.btnIniciar.UseVisualStyleBackColor = false;
-			// 
-			// btnPass2
-			// 
-			this.btnPass2.AutoSize = true;
-			this.btnPass2.LinkColor = System.Drawing.Color.White;
-			this.btnPass2.Location = new System.Drawing.Point(216, 239);
-			this.btnPass2.Name = "btnPass2";
-			this.btnPass2.Size = new System.Drawing.Size(196, 15);
-			this.btnPass2.TabIndex = 5;
-			this.btnPass2.TabStop = true;
-			this.btnPass2.Text = "¿HAS OLVIDADO LA CONTRASEÑA?";
-			// 
-			// pictureBoxMinizar
-			// 
-			this.pictureBoxMinizar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMinizar.Image")));
-			this.pictureBoxMinizar.Location = new System.Drawing.Point(400, 20);
-			this.pictureBoxMinizar.Name = "pictureBoxMinizar";
-			this.pictureBoxMinizar.Size = new System.Drawing.Size(32, 30);
-			this.pictureBoxMinizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBoxMinizar.TabIndex = 6;
-			this.pictureBoxMinizar.TabStop = false;
-			this.pictureBoxMinizar.Click += new System.EventHandler(this.pictureBoxMinizar_Click);
-			// 
-			// pictureBoxCerrar
-			// 
-			this.pictureBoxCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCerrar.Image")));
-			this.pictureBoxCerrar.Location = new System.Drawing.Point(438, 20);
-			this.pictureBoxCerrar.Name = "pictureBoxCerrar";
-			this.pictureBoxCerrar.Size = new System.Drawing.Size(32, 30);
-			this.pictureBoxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBoxCerrar.TabIndex = 7;
-			this.pictureBoxCerrar.TabStop = false;
-			this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
-			// 
-			// Form1
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-			this.ClientSize = new System.Drawing.Size(495, 316);
-			this.Controls.Add(this.pictureBoxCerrar);
-			this.Controls.Add(this.pictureBoxMinizar);
-			this.Controls.Add(this.btnPass2);
-			this.Controls.Add(this.btnIniciar);
-			this.Controls.Add(this.txtPass);
-			this.Controls.Add(this.txtUsuario);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.panel1);
-			this.ForeColor = System.Drawing.Color.Coral;
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Name = "Form1";
-			this.Opacity = 0.9D;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Form1";
-			this.panel1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinizar)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            panel1 = new Panel();
+            UsuarioPictureBox = new PictureBox();
+            label1 = new Label();
+            txtUsuario = new TextBox();
+            txtPass = new TextBox();
+            btnIniciar = new Button();
+            linkRecuperar = new LinkLabel();
+            pictureBoxMinizar = new PictureBox();
+            pictureBoxCerrar = new PictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)UsuarioPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMinizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCerrar).BeginInit();
+            SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(128, 128, 255);
+            panel1.Controls.Add(UsuarioPictureBox);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(228, 315);
+            panel1.TabIndex = 0;
+            // 
+            // UsuarioPictureBox
+            // 
+            UsuarioPictureBox.Image = (Image)resources.GetObject("UsuarioPictureBox.Image");
+            UsuarioPictureBox.Location = new Point(21, 77);
+            UsuarioPictureBox.Name = "UsuarioPictureBox";
+            UsuarioPictureBox.Size = new Size(149, 142);
+            UsuarioPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            UsuarioPictureBox.TabIndex = 0;
+            UsuarioPictureBox.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(495, 30);
+            label1.Name = "label1";
+            label1.Size = new Size(124, 28);
+            label1.TabIndex = 1;
+            label1.Text = "MI LOGIN";
+            // 
+            // txtUsuario
+            // 
+            txtUsuario.BackColor = Color.FromArgb(15, 15, 15);
+            txtUsuario.BorderStyle = BorderStyle.None;
+            txtUsuario.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsuario.ForeColor = Color.DimGray;
+            txtUsuario.Location = new Point(389, 77);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(335, 26);
+            txtUsuario.TabIndex = 1;
+            txtUsuario.Text = "USUARIO";
+            txtUsuario.Enter += txtUsuario_Enter;
+            txtUsuario.Leave += txtUsuario_Leave;
+            // 
+            // txtPass
+            // 
+            txtPass.BackColor = Color.FromArgb(15, 15, 15);
+            txtPass.BorderStyle = BorderStyle.None;
+            txtPass.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPass.ForeColor = Color.DimGray;
+            txtPass.Location = new Point(389, 122);
+            txtPass.Name = "txtPass";
+            txtPass.Size = new Size(335, 26);
+            txtPass.TabIndex = 2;
+            txtPass.Text = "CONTRASEÑA";
+            txtPass.Enter += txtPass_Enter;
+            txtPass.Leave += txtPass_Leave;
+            // 
+            // btnIniciar
+            // 
+            btnIniciar.BackColor = Color.FromArgb(40, 40, 40);
+            btnIniciar.FlatAppearance.BorderSize = 0;
+            btnIniciar.FlatStyle = FlatStyle.Flat;
+            btnIniciar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnIniciar.ForeColor = Color.LightGray;
+            btnIniciar.Location = new Point(389, 169);
+            btnIniciar.Name = "btnIniciar";
+            btnIniciar.Size = new Size(335, 40);
+            btnIniciar.TabIndex = 3;
+            btnIniciar.Text = "INGRESAR";
+            btnIniciar.UseVisualStyleBackColor = false;
+            btnIniciar.Click += btnIniciar_Click;
+            // 
+            // linkRecuperar
+            // 
+            linkRecuperar.ActiveLinkColor = Color.Blue;
+            linkRecuperar.AutoSize = true;
+            linkRecuperar.LinkColor = Color.DimGray;
+            linkRecuperar.Location = new Point(457, 236);
+            linkRecuperar.Name = "linkRecuperar";
+            linkRecuperar.Size = new Size(196, 15);
+            linkRecuperar.TabIndex = 5;
+            linkRecuperar.TabStop = true;
+            linkRecuperar.Text = "¿HAS OLVIDADO LA CONTRASEÑA?";
+            linkRecuperar.LinkClicked += linkRecuperar_LinkClicked;
+            // 
+            // pictureBoxMinizar
+            // 
+            pictureBoxMinizar.Image = (Image)resources.GetObject("pictureBoxMinizar.Image");
+            pictureBoxMinizar.Location = new Point(770, 12);
+            pictureBoxMinizar.Name = "pictureBoxMinizar";
+            pictureBoxMinizar.Size = new Size(32, 30);
+            pictureBoxMinizar.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxMinizar.TabIndex = 6;
+            pictureBoxMinizar.TabStop = false;
+            pictureBoxMinizar.Click += pictureBoxMinizar_Click;
+            // 
+            // pictureBoxCerrar
+            // 
+            pictureBoxCerrar.Image = (Image)resources.GetObject("pictureBoxCerrar.Image");
+            pictureBoxCerrar.Location = new Point(808, 12);
+            pictureBoxCerrar.Name = "pictureBoxCerrar";
+            pictureBoxCerrar.Size = new Size(32, 30);
+            pictureBoxCerrar.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxCerrar.TabIndex = 7;
+            pictureBoxCerrar.TabStop = false;
+            pictureBoxCerrar.Click += pictureBoxCerrar_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(15, 15, 15);
+            ClientSize = new Size(852, 315);
+            Controls.Add(pictureBoxCerrar);
+            Controls.Add(pictureBoxMinizar);
+            Controls.Add(linkRecuperar);
+            Controls.Add(btnIniciar);
+            Controls.Add(txtPass);
+            Controls.Add(txtUsuario);
+            Controls.Add(label1);
+            Controls.Add(panel1);
+            ForeColor = Color.Coral;
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Form1";
+            Opacity = 0.95D;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form1";
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)UsuarioPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMinizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCerrar).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
-		}
+        #endregion
 
-		#endregion
-
-		private Panel panel1;
-		private Label label1;
-		private TextBox txtUsuario;
-		private TextBox txtPass;
-		private Button btnIniciar;
-		private PictureBox pictureBox1;
-		private LinkLabel btnPass2;
-		private PictureBox pictureBoxMinizar;
-		private PictureBox pictureBoxCerrar;
-	}
+        private Panel panel1;
+        private Label label1;
+        private TextBox txtUsuario;
+        private TextBox txtPass;
+        private Button btnIniciar;
+        private PictureBox UsuarioPictureBox;
+        private LinkLabel linkRecuperar;
+        private PictureBox pictureBoxMinizar;
+        private PictureBox pictureBoxCerrar;
+    }
 }
