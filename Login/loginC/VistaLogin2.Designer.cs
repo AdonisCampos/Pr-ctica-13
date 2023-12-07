@@ -31,7 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaLogin2));
             TituloLabel = new Label();
             pictureBoxCerrarVista = new PictureBox();
+            pictureBoxAtras = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCerrarVista).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAtras).BeginInit();
             SuspendLayout();
             // 
             // TituloLabel
@@ -58,19 +60,34 @@
             pictureBoxCerrarVista.TabStop = false;
             pictureBoxCerrarVista.Click += pictureBoxCerrarVista_Click;
             // 
+            // pictureBoxAtras
+            // 
+            pictureBoxAtras.BackgroundImageLayout = ImageLayout.None;
+            pictureBoxAtras.Image = (Image)resources.GetObject("pictureBoxAtras.Image");
+            pictureBoxAtras.Location = new Point(694, 12);
+            pictureBoxAtras.Name = "pictureBoxAtras";
+            pictureBoxAtras.Size = new Size(45, 42);
+            pictureBoxAtras.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxAtras.TabIndex = 2;
+            pictureBoxAtras.TabStop = false;
+            pictureBoxAtras.Click += pictureBoxAtras_Click;
+            // 
             // VistaLogin2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(15, 15, 15);
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBoxAtras);
             Controls.Add(pictureBoxCerrarVista);
             Controls.Add(TituloLabel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "VistaLogin2";
+            Opacity = 0.95D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VistaLogin2";
             ((System.ComponentModel.ISupportInitialize)pictureBoxCerrarVista).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAtras).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -79,5 +96,6 @@
 
         private Label TituloLabel;
         private PictureBox pictureBoxCerrarVista;
+        private PictureBox pictureBoxAtras;
     }
 }

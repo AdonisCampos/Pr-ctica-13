@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Escritorio\\Login\\Login\\loginC\\loginC.csproj": {}
+    "D:\\Escritorio\\Practica_13\\Login\\loginC\\loginC.csproj": {}
   },
   "projects": {
-    "D:\\Escritorio\\Login\\Login\\loginC\\loginC.csproj": {
+    "D:\\Escritorio\\Practica_13\\Login\\loginC\\loginC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Escritorio\\Login\\Login\\loginC\\loginC.csproj",
+        "projectUniqueName": "D:\\Escritorio\\Practica_13\\Login\\loginC\\loginC.csproj",
         "projectName": "loginC",
-        "projectPath": "D:\\Escritorio\\Login\\Login\\loginC\\loginC.csproj",
+        "projectPath": "D:\\Escritorio\\Practica_13\\Login\\loginC\\loginC.csproj",
         "packagesPath": "C:\\Users\\berna\\.nuget\\packages\\",
-        "outputPath": "D:\\Escritorio\\Login\\Login\\loginC\\obj\\",
+        "outputPath": "D:\\Escritorio\\Practica_13\\Login\\loginC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,14 @@
             "MailKit": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "Microsoft.SqlServer.Server": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [

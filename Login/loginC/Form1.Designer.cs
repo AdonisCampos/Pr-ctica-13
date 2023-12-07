@@ -38,6 +38,8 @@
             linkRecuperar = new LinkLabel();
             pictureBoxMinizar = new PictureBox();
             pictureBoxCerrar = new PictureBox();
+            checkBoxVerContraseñaLogin = new CheckBox();
+            btnCrearUsuario = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)UsuarioPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxMinizar).BeginInit();
@@ -110,9 +112,9 @@
             btnIniciar.FlatStyle = FlatStyle.Flat;
             btnIniciar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnIniciar.ForeColor = Color.LightGray;
-            btnIniciar.Location = new Point(389, 169);
+            btnIniciar.Location = new Point(389, 200);
             btnIniciar.Name = "btnIniciar";
-            btnIniciar.Size = new Size(335, 40);
+            btnIniciar.Size = new Size(184, 40);
             btnIniciar.TabIndex = 3;
             btnIniciar.Text = "INGRESAR";
             btnIniciar.UseVisualStyleBackColor = false;
@@ -123,7 +125,7 @@
             linkRecuperar.ActiveLinkColor = Color.Blue;
             linkRecuperar.AutoSize = true;
             linkRecuperar.LinkColor = Color.DimGray;
-            linkRecuperar.Location = new Point(457, 236);
+            linkRecuperar.Location = new Point(459, 261);
             linkRecuperar.Name = "linkRecuperar";
             linkRecuperar.Size = new Size(196, 15);
             linkRecuperar.TabIndex = 5;
@@ -153,12 +155,41 @@
             pictureBoxCerrar.TabStop = false;
             pictureBoxCerrar.Click += pictureBoxCerrar_Click;
             // 
+            // checkBoxVerContraseñaLogin
+            // 
+            checkBoxVerContraseñaLogin.AutoSize = true;
+            checkBoxVerContraseñaLogin.ForeColor = Color.DimGray;
+            checkBoxVerContraseñaLogin.Location = new Point(389, 166);
+            checkBoxVerContraseñaLogin.Name = "checkBoxVerContraseñaLogin";
+            checkBoxVerContraseñaLogin.Size = new Size(125, 19);
+            checkBoxVerContraseñaLogin.TabIndex = 10;
+            checkBoxVerContraseñaLogin.Text = "VER CONTRASEÑA";
+            checkBoxVerContraseñaLogin.UseVisualStyleBackColor = true;
+            checkBoxVerContraseñaLogin.CheckedChanged += checkBoxVerContraseñaLogin_CheckedChanged;
+            // 
+            // btnCrearUsuario
+            // 
+            btnCrearUsuario.BackColor = Color.FromArgb(40, 40, 40);
+            btnCrearUsuario.FlatAppearance.BorderSize = 0;
+            btnCrearUsuario.FlatStyle = FlatStyle.Flat;
+            btnCrearUsuario.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCrearUsuario.ForeColor = Color.LightGray;
+            btnCrearUsuario.Location = new Point(579, 200);
+            btnCrearUsuario.Name = "btnCrearUsuario";
+            btnCrearUsuario.Size = new Size(185, 40);
+            btnCrearUsuario.TabIndex = 11;
+            btnCrearUsuario.Text = "CREAR USUARIO";
+            btnCrearUsuario.UseVisualStyleBackColor = false;
+            btnCrearUsuario.Click += btnCrearUsuario_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(15, 15, 15);
             ClientSize = new Size(852, 315);
+            Controls.Add(btnCrearUsuario);
+            Controls.Add(checkBoxVerContraseñaLogin);
             Controls.Add(pictureBoxCerrar);
             Controls.Add(pictureBoxMinizar);
             Controls.Add(linkRecuperar);
@@ -192,5 +223,7 @@
         private LinkLabel linkRecuperar;
         private PictureBox pictureBoxMinizar;
         private PictureBox pictureBoxCerrar;
+        private CheckBox checkBoxVerContraseñaLogin;
+        private Button btnCrearUsuario;
     }
 }

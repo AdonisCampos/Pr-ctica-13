@@ -1,7 +1,8 @@
 using MailKit.Net.Smtp;
 using MailKit;
 using MimeKit;
-
+using System.Data.SqlClient;
+using Microsoft.Win32;
 
 namespace loginC
 {
@@ -101,16 +102,48 @@ namespace loginC
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            //Instanciar el formulario nuevo
-            VistaLogin2 vistaNueva = new VistaLogin2();
-            //Indicarle el nuevo formulario de donde viene la instancia
-            AddOwnedForm(vistaNueva);
-            //Se accede la control deseado
-            vistaNueva.Show();
-            //Mininizamos la ventana anterior
-            this.Hide();
+            //Creamos la variable de la conexion
+            SqlConnection conexion = new SqlConnection(@"Data Source=BERNARDOCAMPOS\SERVIDORSQL;Initial Catalog=Usuarios;Integrated Security=True");
+            conexion.Open();
+            string consulta = "SELECT usuario, clave FROM Credenciales WHERE usuario = '" + txtUsuario.Text + "' AND clave = '" + txtPass.Text + "'";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                //Instanciar el formulario nuevo
+                VistaLogin2 vistaNueva = new VistaLogin2();
+                //Indicarle el nuevo formulario de donde viene la instancia
+                AddOwnedForm(vistaNueva);
+                //Se accede la control deseado
+                vistaNueva.Show();
+                //Mininizamos la ventana anterior
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario u Contraseña Invalido");
+            }
+
+
         }
 
+        private void checkBoxVerContraseñaLogin_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxVerContraseñaLogin.Checked == true)
+            {
+                txtPass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPass.UseSystemPasswordChar = true;
+            }
+        }
 
+        private void btnCrearUsuario_Click(object sender, EventArgs e)
+        {
+            ingresarUsuario formularioRegistrar = new ingresarUsuario();
+            formularioRegistrar.Show();
+            this.Hide();
+        }
     }
 }
